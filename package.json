@@ -1,0 +1,23 @@
+{
+  "name": "projector",
+  "version": "1.0.0",
+  "description": "Advanced boilerplating for awesome projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programmatical/projector.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "project-manager"
+  ],
+  "author": "programmatical",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/programmatical/projector/issues"
+  },
+  "homepage": "https://github.com/programmatical/projector#readme"
+}
