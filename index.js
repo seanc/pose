@@ -30,7 +30,7 @@ if(create !== -1) {
                });
             }
             if(ans !== 'y' && ans !== 'n') {
-               console.log('Please enter y or n', ans);
+               console.log('Please enter y/n');
                ask();
             }
          });

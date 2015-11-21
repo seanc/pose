@@ -12,5 +12,5 @@
   "unused": true,
   "eqnull": true,
   "loopfunc": true,
-  "predef": [ "iora" ]
+  "predef": []
 }
