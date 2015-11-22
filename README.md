@@ -13,8 +13,6 @@ $ npm install -g pose
 ```
 $ pose <command> [flags] [options]
 ```
-
-## Documentation
 Pose uses GitHub's [Wiki page](https://github.com/programmatical/pose/wiki) feature to document.  Read on how to use pose there.
 
 ## Contribute
