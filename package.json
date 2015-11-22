@@ -28,5 +28,8 @@
   },
   "bin": {
     "pose": "index.js"
+  },
+  "jest": {
+    "testDirectoryName": "tests"
   }
 }
