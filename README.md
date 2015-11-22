@@ -9,6 +9,11 @@ $ npm install -g pose
 ```
 (May require `sudo`)
 
+## Usage
+```
+$ pose <command> [flags] [options]
+```
+
 ## Documentation
 Pose uses GitHub's [Wiki page](https://github.com/programmatical/pose/wiki) feature to document.  Read on how to use pose there.
 
