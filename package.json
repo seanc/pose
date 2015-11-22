@@ -4,7 +4,7 @@
   "description": "Advanced boilerplating for awesome projects",
   "main": "index.js",
   "scripts": {
-    "test": "jest-cli"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
