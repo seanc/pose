@@ -16,6 +16,11 @@ Before you contribute to Pose, you should be familiar with Git and GitHub.  Thro
  1. Present tense. ("Create foo", not "Created foo")
  2. Imperative. ("Move foo", not "Moves foo")
 
+## Finalizing Changes
+ 1. `jshint` lint your code. (if you use [Atom](https://github.com/atom/atom), consider [`linter-jshint`](https://atom.io/packages/linter-jshint))
+ 2. If it's a new feature, create tests for it in [`tests`](tests)/
+ 3. `npm test`.
+
 ## Pull Requests
 Provide an example if necessary.  Wait for a contributor or owner to review it.
 
