@@ -1,5 +1,5 @@
 {
-  "name": "projector",
+  "name": "pose",
   "version": "1.0.0",
   "description": "Advanced boilerplating for awesome projects",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/programmatical/projector.git"
+    "url": "git+https://github.com/programmatical/pose.git"
   },
   "keywords": [
     "boilerplate",
@@ -17,14 +17,13 @@
   "author": "Sean Wilson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/programmatical/projector/issues"
+    "url": "https://github.com/programmatical/pose/issues"
   },
-  "homepage": "https://github.com/programmatical/projector#readme",
+  "homepage": "https://github.com/programmatical/pose#readme",
   "dependencies": {
     "fs-extra": "~0.26.2"
   },
   "bin": {
-    "projector": "index.js",
-    "pro": "index.js"
+    "pose": "index.js"
   }
 }

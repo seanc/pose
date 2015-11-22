@@ -19,7 +19,7 @@ if(argv.length === 0) {
 command.map('--save', '-s', (args) => {
    if(!user.appDirExists()) {
       let ask = function() {
-         rl.question('Projector directory does not exist, would you like to create one? [y/n] ', (ans) => {
+         rl.question('Pose directory does not exist, would you like to create one? [y/n] ', (ans) => {
             if(ans === 'n') {
                console.log('Okay, exiting...');
                process.exit();
@@ -30,7 +30,7 @@ command.map('--save', '-s', (args) => {
                      console.log(err);
                      return;
                   }
-                  console.log('Projecter save directory created.');
+                  console.log('Pose save directory created.');
                   process.exit();
                };
                fs.mkdir(path.join(os.homedir(), '.projector'), (err) => {
@@ -39,7 +39,7 @@ command.map('--save', '-s', (args) => {
                      return;
                   }
                   fs.mkdir(path.join(os.homedir(), '.projector', 'saves'), createSaveDir);
-                  console.log('Projector application directory created, please run again.');
+                  console.log('Pose application directory created, please run again.');
                });
             }
             if(ans !== 'y' && ans !== 'n') {
@@ -267,6 +267,6 @@ command.map('--help', '-h', () => {
 });
 
 command.map('--version', '-v', () => {
-   console.log('Projector Version 1.0.0');
+   console.log('Pose Version 1.0.0');
    process.exit();
 });
