@@ -4,7 +4,7 @@
   "description": "Advanced boilerplating for awesome projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -14,10 +14,17 @@
     "boilerplate",
     "project-manager"
   ],
-  "author": "programmatical",
-  "license": "ISC",
+  "author": "Sean Wilson",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/programmatical/projector/issues"
   },
-  "homepage": "https://github.com/programmatical/projector#readme"
+  "homepage": "https://github.com/programmatical/projector#readme",
+  "dependencies": {
+    "fs-extra": "~0.26.2"
+  },
+  "bin": {
+    "projector": "index.js",
+    "pro": "index.js"
+  }
 }
