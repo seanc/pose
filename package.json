@@ -1,6 +1,6 @@
 {
   "name": "pose",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Advanced boilerplating for awesome projects",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/programmatical/pose#readme",
   "dependencies": {
+    "bco": "^1.0.0",
+    "bluebird": "^3.0.5",
     "fs-extra": "~0.26.2"
   },
   "bin": {
