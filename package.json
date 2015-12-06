@@ -4,7 +4,7 @@
   "description": "Advanced boilerplating for awesome projects",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,13 @@
     "bluebird": "^3.0.5",
     "fs-extra": "~0.26.2"
   },
+  "devDependencies": {
+    "jest-cli": "latest"
+  },
   "bin": {
     "pose": "index.js"
+  },
+  "jest": {
+    "testDirectoryName": "tests"
   }
 }
