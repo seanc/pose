@@ -17,7 +17,7 @@ function init(opts = {}) {
   .pipe(extract);
 
   extract.on('end', () => {
-    console.log(`Initiated ${name}.`);
+    console.log(`Initiated ${template} as ${name}.`);
   });
 
   extract.on('error', () => {

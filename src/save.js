@@ -19,7 +19,7 @@ function save(opts = {}) {
   .pipe(dest);
 
   pack.on('end', () => {
-    console.log(`Saved ${name}.`);
+    console.log(`Saved ${entry} as ${name}.`);
   });
 
   pack.on('error', () => {
