@@ -8,8 +8,8 @@ import { Pack } from 'tar';
  * @param {Object} opts - Options.
  */
 function save(opts = {}) {
-  const name = opts._[1] || opts.name;
-  const entry = opts._[2] || opts.entry;
+  const name = opts._[2] || opts.name;
+  const entry = opts._[1] || opts.entry;
   const destPath = path.join(opts._templates, `${name}.tar`);
 
   const dest = fs.createWriteStream(destPath);
