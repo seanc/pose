@@ -28,6 +28,11 @@ const opts = yargs
 }).argv;
 const action = opts._[0];
 
+if (!action) {
+  console.log('Type "pose help" to get started.');
+  process.exit();
+}
+
 [
   opts._pose = path.join(process.env.HOME, '.pose'),
   opts._templates = path.join(opts._pose, 'templates'),
