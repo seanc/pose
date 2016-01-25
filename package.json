@@ -2,9 +2,12 @@
   "name": "pose",
   "version": "1.1.0",
   "description": "Advanced boilerplating for awesome projects",
-  "main": "index.js",
+  "main": "out/index.js",
+  "bin": "out/cli.js",
   "scripts": {
-    "test": "jest"
+    "test": "make test",
+    "build": "make",
+    "prepublish": "make"
   },
   "repository": {
     "type": "git",
@@ -21,17 +24,11 @@
   },
   "homepage": "https://github.com/programmatical/pose#readme",
   "dependencies": {
-    "bco": "^1.0.0",
-    "bluebird": "^3.0.5",
-    "fs-extra": "~0.26.2"
+    "yargs": "^3.32.0"
   },
   "devDependencies": {
-    "jest-cli": "latest"
-  },
-  "bin": {
-    "pose": "index.js"
-  },
-  "jest": {
-    "testDirectoryName": "tests"
+    "ava": "^0.11.0",
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.4.5"
   }
 }
