@@ -1,10 +1,14 @@
 {
   "name": "pose",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Advanced boilerplating for awesome projects",
-  "main": "index.js",
+  "main": "out/index.js",
+  "bin": "out/cli.js",
   "scripts": {
-    "test": "jest"
+    "build": "babel src -d out",
+    "lint": "eslint src",
+    "test": "npm run lint; npm run build; ava",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -14,6 +18,9 @@
     "boilerplate",
     "project-manager"
   ],
+  "files": [
+    "out"
+  ],
   "author": "Sean Wilson",
   "license": "MIT",
   "bugs": {
@@ -21,17 +28,16 @@
   },
   "homepage": "https://github.com/programmatical/pose#readme",
   "dependencies": {
-    "bco": "^1.0.0",
-    "bluebird": "^3.0.5",
-    "fs-extra": "~0.26.2"
+    "fstream": "^1.0.8",
+    "tar": "^2.2.1",
+    "yargs": "^3.32.0"
   },
   "devDependencies": {
-    "jest-cli": "latest"
-  },
-  "bin": {
-    "pose": "index.js"
-  },
-  "jest": {
-    "testDirectoryName": "tests"
+    "ava": "^0.11.0",
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^4.0.0"
   }
 }
