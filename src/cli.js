@@ -2,6 +2,7 @@
 
 import yargs from 'yargs';
 import path from 'path';
+import fs from 'fs';
 import * as pose from '.';
 
 const opts = yargs
@@ -27,6 +28,12 @@ const opts = yargs
 }).argv;
 const action = opts._[0];
 
-pose[action](opts);
+[
+  opts._pose = path.join(process.env.HOME, '.pose'),
+  opts._templates = path.join(opts._pose, 'templates'),
+].forEach(dir => {
+  fs.mkdir(dir, () => null);
+});
 
+pose[action](opts);
 export { action, opts };
