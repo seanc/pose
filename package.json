@@ -18,7 +18,9 @@
     "boilerplate",
     "project-manager"
   ],
-  "files": [ "out" ],
+  "files": [
+    "out"
+  ],
   "author": "Sean Wilson",
   "license": "MIT",
   "bugs": {
@@ -26,6 +28,8 @@
   },
   "homepage": "https://github.com/programmatical/pose#readme",
   "dependencies": {
+    "fstream": "^1.0.8",
+    "tar": "^2.2.1",
     "yargs": "^3.32.0"
   },
   "devDependencies": {
