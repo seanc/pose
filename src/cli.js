@@ -4,10 +4,12 @@ import yargs from 'yargs';
 import path from 'path';
 import fs from 'fs';
 import * as pose from '.';
+import actions from './actions';
 
 const opts = yargs
 .usage('$ pose <action> [options]')
 .help('help')
+.epilog(actions.trim())
 .options({
   name: {
     alias: ['n'],
