@@ -18,7 +18,8 @@
         "arg": "param",
         "argument": "param"
       }
-    }]
+    }],
+    "no-console": 0
   },
   "env": {
     "node": true
