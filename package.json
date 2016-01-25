@@ -5,10 +5,10 @@
   "main": "out/index.js",
   "bin": "out/cli.js",
   "scripts": {
-    "test": "make test",
-    "build": "make",
-    "prepublish": "make",
-    "lint": "make lint"
+    "build": "babel src -d out",
+    "lint": "eslint src",
+    "test": "npm run lint; npm run build; ava",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
