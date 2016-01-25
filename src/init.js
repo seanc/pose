@@ -7,4 +7,4 @@ function init() {
 
 }
 
-export default create;
+export default init;
