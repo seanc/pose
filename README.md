@@ -1,10 +1,11 @@
-# pose
-Advanced boilerplating for awesome projects.
+pose
+====
+> Advanced boilerplating for awesome projects
 
 Pose allows you to create and save advanced project templates, which you can then initialize in a new project.
 
-## Install
-```
+## Installation
+```shell
 $ npm install -g pose
 ```
 (May require `sudo`)
@@ -13,10 +14,28 @@ $ npm install -g pose
 ```
 $ pose <command> [flags] [options]
 ```
-Pose uses GitHub's [Wiki page](https://github.com/programmatical/pose/wiki) feature to document.  Read on how to use pose there.
 
-## Contribute
-See the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information on how to contribute to Pose.
+## Docs & Support
+ - [Repo Issues](https://github.com/seanc/pose/issues)
+ - [Authors](#Credits)
+
+## Credits
+
+|![Sean Wilson][seanc-image]|![Jamen Marz][jamen-image]|
+|:--------:|:--------:|
+| [@seanc] | [@jamen] |
 
 ## License
-Pose and any contributions made towards pose are licensed under [MIT](LICENSE)
+[MIT][license] &copy; Sean Wilson
+
+<!-- All links must be "tagged" -->
+ [example-badge]: https://img.shields.io/badge/example-badge-green.svg
+ [foobar-badge]: https://img.shields.io/badge/foobar-baz-green.svg
+
+ [@jamen]: https://github.com/jamen
+ [jamen-image]: https://avatars2.githubusercontent.com/u/6251703?v=3&s=125
+
+ [@seanc]: https://github.com/seanc
+ [seanc-image]: https://avatars0.githubusercontent.com/u/13725538?v=3&s=125
+
+ [license]: LICENSE
