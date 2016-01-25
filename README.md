@@ -12,7 +12,7 @@ $ npm install -g pose
 
 ## Usage
 ```
-$ pose <command> [flags] [options]
+$ pose <action> [options]
 ```
 
 ## Docs & Support
