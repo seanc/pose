@@ -18,7 +18,7 @@ const opts = yargs
   },
 
   entry: {
-    alias: ['e'],
+    alias: ['from'],
     default: process.cwd(),
     defaultDescription: 'cwd',
     desc: 'Entry of template',
