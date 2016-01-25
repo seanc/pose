@@ -2,7 +2,7 @@
 
 import yargs from 'yargs';
 import path from 'path';
-import pose from '.';
+import * as pose from '.';
 
 const opts = yargs
 .usage('$ pose <action> [options]')
