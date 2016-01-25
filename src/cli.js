@@ -40,5 +40,9 @@ if (!action) {
   fs.mkdir(dir, () => null);
 });
 
-pose[action](opts);
+if (typeof pose[action] !== 'function') {
+  pose[action]();
+} else {
+  console.error(`Unknown action "${action}"`);
+}
 export { action, opts };
