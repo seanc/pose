@@ -15,9 +15,9 @@ $ npm install -g pose
 $ pose <action> [options]
 
 Options:
-  --help, -h   Show help                                               [boolean]
-  --name, -n   Name of template                                [default: "pose"]
-  --entry, -e  Entry of template    [default: "/home/jamen/projects/seanc/pose"]
+  --help, -h       Show help                                           [boolean]
+  --name, --as     Name of template                            [default: "pose"]
+  --entry, --from  Entry of template                              [default: cwd]
 
 Actions:
   help   Show help
