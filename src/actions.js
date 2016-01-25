@@ -1,5 +1,6 @@
 export default `
 Actions:
-  save   Save a template.
-  init   Initiate a template.
+  help   Show help
+  save   Save template.
+  init   Initiate template.
 `;
