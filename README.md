@@ -21,7 +21,7 @@ $ pose <command> [flags] [options]
 
 ## Credits
 
-| ![Sean Wilson][seanc-image] |![Jamen Marz][jamen-image]|
+|![Sean Wilson][seanc-image]|![Jamen Marz][jamen-image]|
 |:--------:|:--------:|
 | [@seanc] | [@jamen] |
 
