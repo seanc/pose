@@ -4,7 +4,7 @@ import { Reader } from 'fstream';
 import { Pack } from 'tar';
 
 /** pose.save
- * @desc Save a project template.
+ * @desc Save a template.
  * @param {Object} opts - Options.
  */
 function save(opts = {}) {
