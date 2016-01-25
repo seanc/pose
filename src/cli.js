@@ -12,7 +12,7 @@ const opts = yargs
 .epilog(actions.trim())
 .options({
   name: {
-    alias: ['n', 'as'],
+    alias: ['as'],
     default: path.basename(process.cwd()),
     desc: 'Name of template',
   },
