@@ -18,6 +18,7 @@
     "boilerplate",
     "project-manager"
   ],
+  "files": [ "out" ],
   "author": "Sean Wilson",
   "license": "MIT",
   "bugs": {
