@@ -10,12 +10,10 @@ import { Pack } from 'tar';
 function save(opts = {}) {
   const name = opts._[1] || opts.name;
   const entry = opts._[2] || opts.entry;
-
   const destPath = path.join(opts._templates, `${name}.tar`);
+
   const dest = fs.createWriteStream(destPath);
-
   const pack = new Pack({ noProprietary: true });
-
   const read = new Reader({ path: entry, type: 'Directory' })
   .pipe(pack)
   .pipe(dest);
