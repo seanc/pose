@@ -17,7 +17,7 @@ Before you contribute to Pose, you should be familiar with Git and GitHub.  Thro
  2. Imperative. ("Move foo", not "Moves foo")
 
 ## Finalizing Changes
- 1. `eslint` (`npm lint`) lint your code. (if you use [Atom](https://github.com/atom/atom), consider [`linter-eslint`](https://atom.io/packages/linter-eslint))
+ 1. `eslint` (`npm run lint`) lint your code. (if you use [Atom](https://github.com/atom/atom), consider [`linter-eslint`](https://atom.io/packages/linter-eslint))
  2. If it's a new feature, create tests for it in [`test`](test).
  3. `npm test`.
 
