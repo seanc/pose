@@ -41,7 +41,7 @@ if (!action) {
 });
 
 if (typeof pose[action] === 'function') {
-  pose[action]();
+  pose[action](opts);
 } else {
   console.error(`Unknown action "${action}"`);
 }
