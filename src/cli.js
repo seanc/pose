@@ -12,15 +12,12 @@ const opts = yargs
 .epilog(actions.trim())
 .options({
   name: {
-    alias: ['as'],
-    default: path.basename(process.cwd()),
+    alias: ['n'],
     desc: 'Name of template',
   },
 
-  entry: {
-    alias: ['from'],
-    default: process.cwd(),
-    defaultDescription: 'cwd',
+  context: {
+    alias: ['c'],
     desc: 'Entry of template',
   },
 
@@ -31,7 +28,7 @@ const opts = yargs
 const action = opts._[0];
 
 if (!action) {
-  console.log('Type "pose help" to get started.');
+  console.error('Type "pose help" to get started.');
   process.exit();
 }
 
