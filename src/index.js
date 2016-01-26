@@ -5,11 +5,16 @@ import list from './list';
 import remove from './remove';
 
 // aliases
-const { i, s, rm, ls } = { init, save, remove, list };
+const i = init;
+const s = save;
+const mk = save;
+const ls = list;
+const rm = remove;
 
+// actions
 export {
   init, i,
-  save, s,
+  save, s, mk,
   list, ls,
   remove, rm,
   help,
