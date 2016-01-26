@@ -6,7 +6,6 @@ import remove from './remove';
 
 // aliases
 const i = init;
-const s = save;
 const mk = save;
 const ls = list;
 const rm = remove;
@@ -14,7 +13,7 @@ const rm = remove;
 // actions
 export {
   init, i,
-  save, s, mk,
+  save, mk,
   list, ls,
   remove, rm,
   help,
