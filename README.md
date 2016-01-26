@@ -27,6 +27,12 @@ Actions:
   remove   Remove a template.                                                   
 ```
 
+#### Aliases
+ - `save`: `mk`
+ - `init`: `i`
+ - `list`: `ls`
+ - `remove`: `rm`
+
 ## Docs & Support
  - [Repo Issues](https://github.com/seanc/pose/issues)
  - [Authors](#Credits)
