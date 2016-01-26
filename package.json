@@ -1,6 +1,6 @@
 {
   "name": "pose",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Advanced boilerplating for awesome projects",
   "main": "out/index.js",
   "bin": "out/cli.js",
