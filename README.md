@@ -1,4 +1,4 @@
-pose
+Pose
 ====
 > Advanced boilerplating for awesome projects
 
