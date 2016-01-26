@@ -8,26 +8,26 @@ import { Pack } from 'tar';
  * @param {Object} opts - Options.
  */
 function save(opts = {}) {
-  const name = opts._[2] || opts.name;
-  const entry = opts._[1] || opts.entry;
-  const destPath = path.join(opts._templates, `${name}.tar`);
+  const context = opts.context || process.cwd();
+  const name = opts.name || path.basename(context);
+  const template = path.join(opts._templates, `${name}.tar`);
 
-  const dest = fs.createWriteStream(destPath);
+  const dest = fs.createWriteStream(template);
   const pack = new Pack({ noProprietary: true });
-  const read = new Reader({ path: entry, type: 'Directory' })
+  const read = new Reader({ path: path.resolve(context), type: 'Directory' })
   .pipe(pack)
   .pipe(dest);
 
   pack.on('end', () => {
-    console.log(`Saved ${entry} as ${name}.`);
+    console.log(`Saved ${context} as ${name}.`);
   });
 
   pack.on('error', () => {
-    console.log(`Failed to pack ${destPath}`);
+    console.log(`Failed to pack ${template}`);
   });
 
   read.on('error', () => {
-    console.log(`Failed to read ${entry}.`);
+    console.log(`Failed to read ${context}.`);
   });
 }
 

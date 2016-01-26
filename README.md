@@ -15,14 +15,15 @@ $ npm install -g pose
 $ pose <action> [options]
 
 Options:
-  --help, -h       Show help                                           [boolean]
-  --name, --as     Name of template                            [default: "pose"]
-  --entry, --from  Entry of template                              [default: cwd]
+  --help, -h     Show help                                             [boolean]
+  --name, -n     Name of template
+  --context, -c  Entry of template
 
 Actions:
-  help   Show help
-  save   Save template.
-  init   Initiate template.
+  help     Show help
+  save     Save template.
+  init     Initiate template.                                                   
+  remove   Remove template.
 ```
 
 ## Docs & Support
