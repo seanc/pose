@@ -1,4 +1,4 @@
-pose
+Pose
 ====
 > Advanced boilerplating for awesome projects
 
@@ -12,19 +12,26 @@ $ npm install -g pose
 
 ## Usage
 ```
-$ pose <action> [options]
+$ pose <action> [options]                                                       
 
-Options:
+Options:                                                                        
   --help, -h     Show help                                             [boolean]
-  --name, -n     Name of template
-  --context, -c  Entry of template
+  --name, -n     Name of template                                               
+  --context, -c  Entry of template                                              
 
-Actions:
-  help     Show help
-  save     Save template.
-  init     Initiate template.                                                   
-  remove   Remove template.
+Actions:                                                                        
+  help     Show help                                                            
+  save     Save a template.                                                     
+  init     Initiate a template.                                                 
+  list     List saved templates.                                                
+  remove   Remove a template.                                                   
 ```
+
+#### Aliases
+ - `save`: `mk`
+ - `init`: `i`
+ - `list`: `ls`
+ - `remove`: `rm`
 
 ## Docs & Support
  - [Repo Issues](https://github.com/seanc/pose/issues)
